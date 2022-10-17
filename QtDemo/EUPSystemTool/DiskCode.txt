@@ -1,0 +1,31 @@
+			Hostbyte
+hostbyte			Symbol			Description
+0x00			DID_OK			没有错误
+0x01			DID_NO_CONNECT		在超时之前，不能连接
+0x02			DID_BUS_BUSY		在超时期间，BUS一直处于忙状态
+0x03			DID_TIME_OUT		因为其他原因超时
+0x04			DID_BAD_TARGET		BAD target
+0x05			DID_ABORT		因为其他原因取消
+0x06			DID_PARITY		Parity错误
+0x07			DID_ERROR		内部错误（internal error）
+0x08			DID_RESET		被复位
+0x09			DID_BAD_INTR		得到一个未被期望的中断
+
+
+			Driverbyte
+driverbyte			Symbol			Description
+0x00			DRIVER_OK		没有错误
+0x01			DRIVER_BUSY		未使用
+0x02			DRIVER_SOFT		未使用
+0x03			DRIVER_MEDIA		未使用
+0x04			DRIVER_ERROR		内部驱动错误
+0x05			DRIVER_INVALID		完成（DID_BAD_TARGET或DID_ABORT）
+0x06			DRIVER_TIMEOUT		超时完成
+0x07			DRIVER_HARD		完成，但有致命错误
+0x08			DRIVER_SENSE		有sense信息
+0x10			SUGGEST_RETRY		重试SCSI请求
+0x20			SUGGEST_ABORT		取消请求
+0x30			SUGGEST_REMAP		重新映射block，但没有完成
+0x40			SUGGEST_DIE		让内核Panic
+0x80			SUGGEST_SENSE		从设备上获取Sense信息
+0xff			SUGGEST_IS_OK		不需要做任何操作

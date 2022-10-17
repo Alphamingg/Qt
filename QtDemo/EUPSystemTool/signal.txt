@@ -1,0 +1,36 @@
+Signal Name	Signal No	Description
+SIGHUP		1	/* Hangup (POSIX). */ 终止进程 终端线路挂断
+SIGINT		2	/* Interrupt (ANSI). */ 终止进程 中断进程 Ctrl+C
+SIGQUIT		3	/* Quit (POSIX). */ 建立CORE文件终止进程，并且生成core文件 Ctrl+\
+SIGILL		4	/* Illegal instruction (ANSI). */ 建立CORE文件,非法指令
+SIGTRAP		5	/* Trace trap (POSIX). */ 建立CORE文件,跟踪自陷
+SIGABRT		6	/* Abort (ANSI). */
+SIGIOT		6	/* IOT trap (4.2 BSD). */ 建立CORE文件,执行I/O自陷
+SIGBUS		7	/* BUS error (4.2 BSD). */ 建立CORE文件,总线错误
+SIGFPE		8	/* Floating-point exception (ANSI). */ 建立CORE文件,浮点异常
+SIGKILL		9	/* Kill, unblockable (POSIX). */ 终止进程 杀死进程
+SIGUSR1		10	/* User-defined signal 1 (POSIX). */ 终止进程 用户定义信号1
+SIGSEGV		11	/* Segmentation violation (ANSI). */ 建立CORE文件,段非法错误
+SIGUSR2		12	/* User-defined signal 2 (POSIX). */ 终止进程 用户定义信号2
+SIGPIPE		13	/* Broken pipe (POSIX). */ 终止进程 向一个没有读进程的管道写数据
+SIGALARM		14      	/* Alarm clock (POSIX). */ 终止进程 计时器到时
+SIGTERM		15	/* Termination (ANSI). */ 终止进程 软件终止信号
+SIGSTKFLT		16      	/* Stack fault. */
+SIGCHLD			/* Same as SIGCHLD (System V). */
+SIGCHLD		17	/* Child status has changed (POSIX). */ 忽略信号 当子进程停止或退出时通知父进程
+SIGCONT		18	/* Continue (POSIX). */ 忽略信号 继续执行一个停止的进程
+SIGSTOP		19	/* Stop, unblockable (POSIX). */ 停止进程 非终端来的停止信号
+SIGTSTP		20	/* Keyboard stop (POSIX). */ 停止进程 终端来的停止信号 Ctrl+Z
+SIGTTIN		21	/* Background read from tty (POSIX). */ 停止进程 后台进程读终端
+SIGTTOU		22	/* Background write to tty (POSIX). */ 停止进程 后台进程写终端
+SIGURG		23	/* Urgent condition on socket (4.2 BSD). */ 忽略信号 I/O紧急信号
+SIGXCPU		24	/* CPU limit exceeded (4.2 BSD). */ 终止进程 CPU时限超时
+SIGXFSZ		25	/* File size limit exceeded (4.2 BSD). */ 终止进程 文件长度过长
+SIGVTALRM	26 	/* Virtual alarm clock (4.2 BSD). */ 终止进程 虚拟计时器到时
+SIGPROF		27	/* Profiling alarm clock (4.2 BSD). */ 终止进程 统计分布图用计时器到时
+SIGWINCH		28      	/* Window size change (4.3 BSD, Sun). */ 忽略信号 窗口大小发生变化
+SIGPOLL SIGIO		/* Pollable event occurred (System V). */
+SIGIO		29	/* I/O now possible (4.2 BSD). */ 忽略信号 描述符上可以进行I/O
+SIGPWR		30	/* Power failure restart (System V). */
+SIGSYS		31	/* Bad system call. */
+SIGUNUSED	31

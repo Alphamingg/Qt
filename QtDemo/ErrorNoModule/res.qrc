@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>errno.txt</file>
+        <file>shellCode.txt</file>
+        <file>signal.txt</file>
+    </qresource>
+</RCC>
